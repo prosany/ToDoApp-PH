@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do Application</title>
+  </head>
+  <body>
+    <header class="header">Hero Todos</header>
+    <main>
+      <section class="main-section">
+        <div>
+          <div class="priority-head">Low</div>
+          <div id="low"></div>
+        </div>
+        <div>
+          <div class="priority-head">Medium</div>
+          <div id="medium"></div>
+        </div>
+        <div>
+          <div class="priority-head">High</div>
+          <div id="high"></div>
+        </div>
+      </section>
+
+      <section class="post-todo">
+        <label for="todo-name">Your Name</label>
+        <input type="text" id="todo-name" />
+        <label for="todo-content">Content</label>
+        <textarea id="todo-content" rows="5"></textarea>
+        <label for="todo-priority">Priority</label>
+        <select id="todo-priority">
+          <option value="#" disabled selected>Choose Color</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button onclick="createTodo()">Create New Task</button>
+      </section>
+    </main>
+    <footer class="footer">
+      Copyright To-Do Application - Programming Hero.
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
